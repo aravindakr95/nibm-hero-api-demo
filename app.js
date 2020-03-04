@@ -27,7 +27,7 @@ app.use('/api/heroes', heroes);
 app.use('/api/users', users);
 app.use('/api/auth', auth);
 
-const port = process.env.port;
+const port = process.env.PORT;
 
 // If collection is not exists it will create automatically and document too (Hero -> heros happen automatically)
 async function connectDb() {
