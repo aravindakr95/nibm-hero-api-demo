@@ -32,7 +32,7 @@ const port = process.env.PORT;
 // If collection is not exists it will create automatically and document too (Hero -> heros happen automatically)
 async function connectDb() {
     try {
-        await mongoose.connect('mongodb://localhost/herodb', {
+        await mongoose.connect('mongodb+srv://admin:admin@123@cluster0-jw1zk.mongodb.net/herodb?retryWrites=true&w=majority', {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
